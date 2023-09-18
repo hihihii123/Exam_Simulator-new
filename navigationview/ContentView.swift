@@ -12,11 +12,11 @@ struct ContentView: View {
     @State var sheetShownE = false
     @State var slist: [String] = []
     @State var percentagevariable = true
-    @State var AStarGrade = 91
-    @State var AGrade = 75
-    @State var BGrade = 65
-    @State var CGrade = 55
-    @State var DGrade = 50
+    @AppStorage("AS") var AStarGrade = 91
+    @AppStorage("A") var AGrade = 75
+    @AppStorage("B") var BGrade = 65
+    @AppStorage("C") var CGrade = 55
+    @AppStorage("D") var DGrade = 50
     
     var body: some View {
         NavigationStack {
